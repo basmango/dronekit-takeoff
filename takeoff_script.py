@@ -1,7 +1,7 @@
 from dronekit import connect, VehicleMode
 
 # Connect to the vehicle
-vehicle = connect('udpin:0.0.0.0:14550',wait_ready=True)
+vehicle = connect("udpin:0.0.0.0:14550", wait_ready=True)
 
 # Arm the vehicle and take off to a target altitude of 10 meters
 vehicle.mode = VehicleMode("GUIDED")
@@ -19,4 +19,3 @@ print("Vehicle has reached target altitude")
 
 # Close the connection
 vehicle.close()
-
